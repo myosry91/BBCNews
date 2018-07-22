@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:gravity="left"
+            android:text="Egypt news"
+            android:textColor="#042856"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <ImageView
+            android:id="@+id/image_news"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@mipmap/ic_launcher"
+            tools:ignore="RtlCompat" />
+
+
+        <TextView
+            android:id="@+id/text_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="left"
+            android:text="news"
+            android:textColor="#000000"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/news_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="18dp"
+            android:gravity="left"
+            android:text="Go to this news page >>>"
+            android:textColor="#930d0d"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat"
+            android:onClick="goToBBCLink"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="18dp"
+            android:gravity="left"
+            android:textColor="#930d0d"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat"
+            android:onClick="goToHomePage"
+            android:text="Go to home page >>>"/>
+
+
+    </LinearLayout>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/web_view"/>
+
+
+</LinearLayout>
